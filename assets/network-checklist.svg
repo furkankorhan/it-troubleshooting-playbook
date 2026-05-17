@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Network troubleshooting checklist preview">
+  <rect width="1200" height="675" rx="28" fill="#0f172a"/>
+  <text x="70" y="90" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="800">IT Troubleshooting Playbook</text>
+  <text x="72" y="128" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="22">Check evidence first, then decide the next step.</text>
+  <g stroke="#475569" stroke-width="4" fill="none">
+    <rect x="120" y="230" width="170" height="95" rx="18"/>
+    <rect x="515" y="230" width="170" height="95" rx="18"/>
+    <rect x="910" y="230" width="170" height="95" rx="18"/>
+    <path d="M290 278 H515"/>
+    <path d="M685 278 H910"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="205" y="270" fill="#f8fafc" font-size="24" font-weight="800">Client</text>
+    <text x="205" y="303" fill="#94a3b8" font-size="18">IP config</text>
+    <text x="600" y="270" fill="#f8fafc" font-size="24" font-weight="800">Gateway</text>
+    <text x="600" y="303" fill="#94a3b8" font-size="18">router test</text>
+    <text x="995" y="270" fill="#f8fafc" font-size="24" font-weight="800">DNS</text>
+    <text x="995" y="303" fill="#94a3b8" font-size="18">name lookup</text>
+  </g>
+  <rect x="210" y="410" width="780" height="145" rx="18" fill="#111827" stroke="#334155"/>
+  <g font-family="JetBrains Mono, Menlo, monospace" font-size="22">
+    <text x="250" y="460" fill="#67e8f9">$ ping 192.168.1.1</text>
+    <text x="250" y="500" fill="#f8fafc">$ nslookup google.com</text>
+    <text x="250" y="540" fill="#fbbf24">Result: collect facts before changing settings</text>
+  </g>
+</svg>
