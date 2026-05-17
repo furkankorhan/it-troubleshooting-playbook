@@ -1,5 +1,7 @@
 # IT Troubleshooting Playbook
 
+![Network troubleshooting checklist preview](assets/network-checklist.svg)
+
 A practical troubleshooting playbook for common IT support situations.
 
 The goal is simple: when something does not work, do not guess first. Check the basics, collect evidence, then decide the next step.
@@ -9,6 +11,7 @@ The goal is simple: when something does not work, do not guess first. Check the 
 - [Internet funktioniert nicht](internet-not-working.md)
 - [DNS, DHCP and Gateway Basics](dns-dhcp-gateway.md)
 - [Terminal Command Notes](terminal-command-notes.md)
+- [Was ist DNS?](was-ist-dns.md)
 
 ## Focus
 
@@ -45,6 +48,31 @@ This repository starts with network troubleshooting because it is one of the mos
 Ich prüfe zuerst, ob das Gerät eine gültige IP-Adresse hat.
 Danach teste ich das Gateway und die DNS-Auflösung.
 Ich ändere nicht sofort Einstellungen, sondern sammle zuerst Informationen.
+```
+
+## Example Command Outputs
+
+```bash
+ping -c 3 192.168.1.1
+```
+
+```text
+64 bytes from 192.168.1.1: icmp_seq=0 ttl=64 time=3.2 ms
+64 bytes from 192.168.1.1: icmp_seq=1 ttl=64 time=2.8 ms
+64 bytes from 192.168.1.1: icmp_seq=2 ttl=64 time=3.0 ms
+```
+
+```bash
+nslookup google.com
+```
+
+```text
+Server:  192.168.1.1
+Address: 192.168.1.1#53
+
+Non-authoritative answer:
+Name: google.com
+Address: 142.250.185.14
 ```
 
 ## Next Improvements
