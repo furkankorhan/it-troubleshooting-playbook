@@ -39,6 +39,14 @@ This repository starts with network troubleshooting because it is one of the mos
 - I document technical topics in a simple and readable way.
 - I am building this repository as practical proof for IT system and support fundamentals.
 
+## Interview Practice Sentences
+
+```txt
+Ich prüfe zuerst, ob das Gerät eine gültige IP-Adresse hat.
+Danach teste ich das Gateway und die DNS-Auflösung.
+Ich ändere nicht sofort Einstellungen, sondern sammle zuerst Informationen.
+```
+
 ## Next Improvements
 
 - Add screenshots or example command outputs
