@@ -1,83 +1,20 @@
-# IT Troubleshooting Playbook
+# Netzwerknotizen
 
-![Network troubleshooting checklist preview](assets/network-checklist.svg)
+Hier sammle ich Grundlagen und Checklisten zur Fehlersuche im Netzwerk. Die Notizen gehören zu meiner Vorbereitung auf eine IT-Ausbildung, besonders im Bereich Systemintegration.
 
-A practical troubleshooting playbook for common IT support situations.
+## Inhalt
 
-The goal is simple: when something does not work, do not guess first. Check the basics, collect evidence, then decide the next step.
+- [Internet funktioniert nicht](internet-not-working.md) – Verbindung, IP-Konfiguration, Gateway und DNS prüfen
+- [DNS, DHCP und Gateway](dns-dhcp-gateway.md) – kurze Erklärungen der Begriffe
+- [Terminal-Befehle](terminal-command-notes.md) – Befehle für Netzwerk-, Datei- und Git-Aufgaben
+- [Was ist DNS?](was-ist-dns.md) – eine kurze Erklärung auf Deutsch
 
-## Playbooks
+Ein Teil der Notizen ist auf Englisch. Die deutschen Abschnitte helfen mir, die Fachbegriffe auch auf Deutsch zu verwenden.
 
-- [Internet funktioniert nicht](internet-not-working.md)
-- [DNS, DHCP and Gateway Basics](dns-dhcp-gateway.md)
-- [Terminal Command Notes](terminal-command-notes.md)
-- [Was ist DNS?](was-ist-dns.md)
+## Verwendung
 
-## Focus
+Die Markdown-Dateien lassen sich direkt auf GitHub lesen. Die Beispiele sind Lernmaterial und keine Protokolle aus einem Firmennetzwerk. Adressen wie `192.168.1.1` müssen zum eigenen Netzwerk passen.
 
-This repository starts with network troubleshooting because it is one of the most common support situations:
+Ein fehlgeschlagener Ping beweist noch keinen Verbindungsfehler: Manche Geräte und Firewalls beantworten solche Anfragen nicht. Auch einzelne Zeitüberschreitungen bei `traceroute` reichen nicht aus, um eine Störung zuzuordnen. Ergebnisse sollten immer zusammen mit weiteren Prüfungen betrachtet werden.
 
-- internet connection problems
-- wrong or missing IP configuration
-- DNS problems
-- DHCP problems
-- gateway/router problems
-- basic terminal checks
-
-## Short German Explanations
-
-| Begriff | Kurze Erklärung |
-|---|---|
-| IP-Adresse | Eine Adresse, mit der ein Gerät im Netzwerk erreichbar ist. |
-| DNS | Übersetzt Domainnamen wie `google.com` in IP-Adressen. |
-| DHCP | Verteilt automatisch IP-Adressen und Netzwerkeinstellungen. |
-| Gateway | Der Router, über den ein Gerät andere Netzwerke erreicht. |
-| Ping | Testet, ob ein Ziel erreichbar ist und wie lange die Antwort dauert. |
-
-## What This Repository Shows
-
-- I can structure a technical problem step by step.
-- I know the basic difference between IP, DNS, DHCP and gateway.
-- I can use terminal commands to collect information.
-- I document technical topics in a simple and readable way.
-- I am building this repository as practical proof for IT system and support fundamentals.
-
-## Interview Practice Sentences
-
-```txt
-Ich prüfe zuerst, ob das Gerät eine gültige IP-Adresse hat.
-Danach teste ich das Gateway und die DNS-Auflösung.
-Ich ändere nicht sofort Einstellungen, sondern sammle zuerst Informationen.
-```
-
-## Example Command Outputs
-
-```bash
-ping -c 3 192.168.1.1
-```
-
-```text
-64 bytes from 192.168.1.1: icmp_seq=0 ttl=64 time=3.2 ms
-64 bytes from 192.168.1.1: icmp_seq=1 ttl=64 time=2.8 ms
-64 bytes from 192.168.1.1: icmp_seq=2 ttl=64 time=3.0 ms
-```
-
-```bash
-nslookup google.com
-```
-
-```text
-Server:  192.168.1.1
-Address: 192.168.1.1#53
-
-Non-authoritative answer:
-Name: google.com
-Address: 142.250.185.14
-```
-
-## Next Improvements
-
-- Add screenshots or example command outputs
-- Add a printable checklist
-- Add a German-only version for interview practice
-- Add more scenarios: slow PC, full storage, printer problem, software installation issue
+Die Sammlung ist noch klein. Als Nächstes möchte ich nachvollziehbare Beispiele mit eigenen Beobachtungen ergänzen.
